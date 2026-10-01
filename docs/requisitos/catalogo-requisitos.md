@@ -282,7 +282,7 @@ FR-017 se conserva para no perder el identificador histórico, pero su estado es
 |NFR-001|NFR-Q(disponibilidad)|la plataforma alcanzara una disponibilidad minima del 99,5% en casa mes natural|Global|-|medida mediante comprobaciones externas cada 5 minutos|A3 s1.1|
 |NFR-002|NFR-R(despliegue)|La plataforma se desplegara en una infraestructura en la nube gestionada por un proveedor externo|Global|-|inspeccion|ATOs2.5.2; DVAs3.3|
 |NFR-003|NFR-Q(mantenimiento)|Las tareas de mantenimiento programado quedarán fuera del cálculo de disponibilidad cuando se comuniquen con 48 horas de antelación y no excedan las 4 horas mensuales. Cualquier tiempo que supere este límite se considerará indisponibilidad.| global|-|-|ATO 2.1.5|
-||||||||
+|NFR-004|NFR-Rrestricciones)|el cuidador que permanezca 3 meses sin asociacion con ningun paciente se consederara inactivo y si permanece asi durante 1 año completo se eliminara |L|-|se comprobara cada año |ATO 2.2.4|
 
 Categorías y atributos: 
 1) Requisitos de calidad (NFR-Q): Rendimiento, Usabilidad, Seguridad, Fiabilidad, Disponibilidad, Modificabilidad, Portabilidad, Eficiencia, Escalabilidad, Verificabilidad / Testabilidad, Robustez, Seguridad funcional (safety), Integridad, Reusabilidad, Instalabilidad.
