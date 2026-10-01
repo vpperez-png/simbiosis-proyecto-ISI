@@ -268,6 +268,15 @@ enlazar a los términos de esta sección, pero no los definirá de nuevo.
 
 | Término | Definición en Proyecto Simbiosis | Fuente |
 | --- | --- | --- |
+|nutricionista | rol profesional acreditado ,comun para medicos y nutrionistas , que peuden publicar y validar recetas|A3 s1.2,1.3 y s3|
+|receta adaptada |receta adecuada al perfil , las alergias o las restricciones alimentarias de un paciente. La plataforma no modifica automáticamente sus ingredientes o cantidades. | DVA s1.1 y 2.1;A3 s3|
+|paciente|usuario el cual padece EII(enfermedades inflamatorias intestinales)|DVA s1.1|
+|receta propuesta |una propuesta de un paciente o cuidador que requiere de una validación de un  nutricionista|A3 S3|
+|Foro| espacio común para compartir dudas y experiencias con la conviviencia con la enfermedad|A3 S4|
+|mensaje directo |mensaje enviado por una cuenta de un usuario a otro, siempre con carácter positivo|A3 S4|
+|política de publicación| evaluación de los contenidos inapropiados , las sanciones y somo deben de tratarse dichos reportes|A3 S4|
+|comunidad activa |organización para fomentar un entorno agradable y de apoyo mutuo entre los pacientes |DVA 1.1|
+
 
 ## 10. Modelos de análisis
 
