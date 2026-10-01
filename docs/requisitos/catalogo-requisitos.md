@@ -281,7 +281,8 @@ FR-017 se conserva para no perder el identificador histórico, pero su estado es
 | NFR-07 |NFR-Q (Eficiencia; Escalabilidad; Mantenibilidad) |La plataforma mantendrá los objetivos de capacidad y rendimiento definidos para la primera versión sin intervención manual del personal de la organización.| G | -  | Prueba de carga automatizada con 100 usuarios concurrentes y 10 operaciones/s durante 30 min; comprobar mediante registros de monitorización, ausencia de intervención manual. | - |
 |NFR-001|NFR-Q(disponibilidad)|la plataforma alcanzara una disponibilidad minima del 99,5% en casa mes natural|Global|-|medida mediante comprobaciones externas cada 5 minutos|A3 s1.1|
 |NFR-002|NFR-R(despliegue)|La plataforma se desplegara en una infraestructura en la nube gestionada por un proveedor externo|Global|-|inspeccion|ATOs2.5.2; DVAs3.3|
-|NFR-003|NFR-Q(mantenimiento)|Las tareas de mantenimiento programado quedarán fuera del cálculo de disponibilidad cuando se comuniquen con 48 horas de antelación y no excedan las 4 horas mensuales. Cualquier tiempo que supere este límite se considerará indisponibilidad.|  G||||
+|NFR-003|NFR-Q(mantenimiento)|Las tareas de mantenimiento programado quedarán fuera del cálculo de disponibilidad cuando se comuniquen con 48 horas de antelación y no excedan las 4 horas mensuales. Cualquier tiempo que supere este límite se considerará indisponibilidad.| global|-|-|ATO 2.1.5|
+||||||||
 
 Categorías y atributos: 
 1) Requisitos de calidad (NFR-Q): Rendimiento, Usabilidad, Seguridad, Fiabilidad, Disponibilidad, Modificabilidad, Portabilidad, Eficiencia, Escalabilidad, Verificabilidad / Testabilidad, Robustez, Seguridad funcional (safety), Integridad, Reusabilidad, Instalabilidad.
