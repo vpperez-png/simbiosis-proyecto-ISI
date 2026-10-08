@@ -2,9 +2,9 @@
 
 | Versión | Fecha | Estado |
 | --- | --- | --- |
-| 1.3 | 08/10/2026 | borrador |
+| 1.3 | 05/10/2026 | Plantilla |
 
-**Iteración de referencia:** E1
+**Iteración de referencia:** [Indica la última iteración incorporada al modelo.]
 
 Este documento recoge el modelo de casos de uso del proyecto. Se completa a medida que se incorporan funciones. Los diagramas muestran distintas vistas del mismo modelo.
 
@@ -28,11 +28,17 @@ Registra los roles externos que participan en las funciones representadas. Un ac
 
 | Nombre del actor | Rol que representa |
 | --- | --- |
+|usuario |persona que interactúa con Proyecto Simbiosis|
+|usuario registrado | persona que dispone de una cuenta en la plataforma|
+|coordinador |el usuario registrado con capacidad para modificar la plataforma|
+|nutricionista| usuario registrado que es capaz de tratar a pacientes|
+|cuidador |usuario registrado capacitado para cuidar al paciente |
+|paciente| usuario registrado con acceso a ayuda por parte de la plataforma|
 | [Nombre] | [Describe el rol externo.] |
 
 Mantén los mismos nombres en las tablas, los diagramas y las descripciones.
 
-[Si existen generalizaciones, identifica el actor general y los actores especializados. Explica qué relación existe entre ellos. Puedes hacer referencia a un diagrama adicional de actores si facilita la lectura. Si no utilizas generalizaciones, indícalo.]
+Usuario registrado de una generalizacion de un usuario .Disponer de una cuenta no significa haber iniciado sesión.
 
 ## 3 Casos de uso
 
@@ -40,6 +46,12 @@ Registra los casos que aparecen en el modelo. Asigna a cada caso un identificado
 
 | Identificador | Nombre | Objetivo | Participantes |
 | --- | --- | --- | --- |
+|UC-05|actualizar perfil |actualizar los datos personales y preferencias de la cuenta propia |actor principal: usuario registrado. No se identifica actor de apoyo|
+|UC-01|Registo de usuario |la capacidad para que un usuario el cual aun no está registrado , pueda hacerlo para acceder a la contraseña|usuario|
+|UC-02|validaciones|validar a los usuarios los diferentes casos de uso(UC-02,UC-03,UC-04).Hay diferentes tipos de validaciones unas externas y otras internas  |usuario|
+|UC-03|iniciar sesion |capacidad para que un usuario ya registrado pueda acceder a la plataforma|usuario registrado|
+|UC-04|restablecimiento de contraseña|la posibilidad de recuperar tu contraseña en caso de perderla |usuario registrado|
+|UC-06|ver y modiificar el listado de cuentas|capacidad exclusiva del modificador para cambiar el listado de cuentas de los pacientes y cuidadores|coordinador|
 | [UC-…] | [Nombre] | [Explica el objetivo.] | [Indica los actores que participan.] |
 
 [Indica los actores que participan. Si procede, distingue el actor principal, que busca alcanzar el objetivo del caso de uso y normalmente inicia la interacción, de los actores de apoyo, que proporcionan servicios o información al sistema.]
@@ -56,11 +68,11 @@ Para cada vista, incluye un título, una frase sobre su alcance y el diagrama. T
 
 ### 4.1 Primera vista
 
-**Título:** Modelo casos de uso acceso cuentas ayuda
+**Título:** [Indica el título de la vista.]
 
 **Alcance:** [Explica qué funciones representa esta vista.]
 
-![Casos de uso de acceso cuentas y ayuda](imagenes/casos-de-uso-acceso-cuentas-ayuda.png)
+[Inserta aquí el diagrama.]
 
 Si una decisión necesita aclaración, puedes añadir una nota breve junto al diagrama.
 
@@ -98,7 +110,13 @@ En E1 basta con un respaldo breve del diagrama. La tabla permite ampliar la traz
 
 | Elemento del modelo | UR y FR de referencia | NFR pertinentes | Relación con los requisitos |
 | --- | --- | --- | --- |
-| [Caso, actor o relación] | [Identificadores] | [Identificadores, si procede] | [Explica qué respaldan o condicionan.] |
+|UC-05. Actualizar perfil|UR-03 ; FR-19|NFR-10 GLOBAL|FR-019 Nos permite modificar datos personales y preferencias , pero además excluye alias y correo.|
+|UC-01|Registo de usuario|UR-01 Y FR-001, FR-002, FR-003, FR-004, FR-005, FR-007, FR-008, FR-009, FR-010, FR-011, FR-012, FR-013, FR-188, FR-189, FR-214 y FR-215.|
+|UC-02|validaciones|UR-02 FR-015 y FR-016.|
+|UC-03|iniciar sesión| UR-01 Y FR-001, FR-002, FR-003, FR-004, FR-005, FR-007, FR-008, FR-009, FR-010, FR-011, FR-012, FR-013, FR-188, FR-189, FR-214 y FR-215.|
+|UC-04|restablecimiento de contraseña|UR-02 FR-015 y FR-016.|
+|UC-06|ver y modiificar el listado de cuentas|UR-13 y FR-181, FR-182, FR-183, FR-184 y FR-185.|
+
 
 Consulta el [catálogo canónico](../requisitos/catalogo-requisitos.md) y la [SRS](../requisitos/srs.md). Si falta una condición, indica que está pendiente de aclaración. No la presentes como un requisito confirmado.
 
