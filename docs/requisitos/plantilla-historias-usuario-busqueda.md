@@ -3,7 +3,7 @@
 | Campo | Valor |
 | --- | --- |
 | Proyecto | Proyecto Simbiosis |
-| Fecha | [dd/mm/aaaa] |
+| Fecha | [29/10/2026] |
 | Versión | [Versión de trabajo] |
 | Estado | Borrador |
 
